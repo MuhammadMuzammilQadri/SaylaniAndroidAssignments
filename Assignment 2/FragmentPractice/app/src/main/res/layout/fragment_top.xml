@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muhammadmuzammil.fragmentpractice.TopFragment"
+    android:gravity="center">
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="I Am The First Fragment.."
+        android:textSize="20dp"
+        android:id="@+id/firstFragmentTextView"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonContainer"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/firstFragmentTextView">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonToReplaceFragment"
+            android:text="Click me..\nFor Replacing Fragments"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
